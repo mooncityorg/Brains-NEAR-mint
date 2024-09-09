@@ -1,0 +1,23 @@
+$themeColor: #2cbbdb;
+$themeColorHover: #fff;
+$pageBackground: #ffffff;
+$lightButtonColor: #ffffff;
+$lightButtonBorderColor: #a0a0a0;
+$lightButtonColorHover: #f1f1f1;
+
+$red: #d61810;
+$yellow: #f2b239;
+$green: #10a310;
+
+.color {
+  color: $themeColor;
+}
+.red {
+  color: $red;
+}
+.yellow {
+  color: $yellow;
+}
+.green {
+  color: $green;
+}

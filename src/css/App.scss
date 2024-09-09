@@ -1,0 +1,147 @@
+@import "./Colors.scss";
+@import "./Props.scss";
+@import "./media.scss";
+
+@font-face {
+  font-family: "VCR_OSD_MONO_1.001";
+  src: local("VCR_OSD_MONO_1.001"),
+    url("../font/VCR_OSD_MONO_1.001.ttf") format("truetype");
+  // font-weight: Tiny;
+}
+
+.font,
+body {
+  font-family: "VCR_OSD_MONO_1.001";
+}
+
+@mixin bgImage($radius: 50%) {
+  height: 100%;
+  width: 100%;
+  border-radius: $radius;
+  background-color: #e2e2e2;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+@mixin dropDownAnim($duration: 0.3s) {
+  animation-name: drop;
+  animation-duration: $duration;
+  transform-origin: top;
+}
+
+@keyframes drop {
+  0% {
+    transform: scaleY(0.5);
+    opacity: 0;
+  }
+}
+
+.wrapWidth {
+  width: 1140px;
+  margin: 0 auto;
+
+  @include media("<=xlarge") {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  @include media("<=large") {
+    width: 100%;
+    padding: 0px 3%;
+  }
+
+  @include media("<=desktop") {
+    width: 100%;
+    padding: 0px 3%;
+  }
+
+  @include media("<=tablet") {
+    width: 540px;
+    padding: 0px 3%;
+  }
+
+  @include media(">=phone", "<=480px") {
+    padding: 0px 5%;
+  }
+}
+
+.App {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+// Header
+.header-cmp {
+  z-index: 999;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 90px;
+  padding: 12px 0px;
+  position: fixed;
+
+  .wrap {
+    justify-content: flex-end;
+
+    .link {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Home Page
+.main-page {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 40px;
+
+  .wrap {
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    .logo-img {
+      cursor: pointer;
+      height: 120px;
+    }
+
+    .action {
+      margin-top: 10px;
+
+      .logo1 {
+        height: 200px;
+      }
+    }
+
+    .meta {
+      padding-top: 60px;
+
+      .desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}

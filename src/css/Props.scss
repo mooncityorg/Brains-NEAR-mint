@@ -1,0 +1,480 @@
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+label,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+div,
+img,
+button,
+input,
+textarea,
+select {
+  outline: none;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+a,
+img {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wordwrap {
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 99%;
+}
+@mixin wordwrap() {
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 99%;
+}
+
+.pointer,
+button {
+  cursor: pointer;
+}
+.aic {
+  align-items: center;
+}
+.jc {
+  justify-content: center;
+}
+.tbl {
+  display: table;
+}
+.bl {
+  display: block;
+}
+.ibl li,
+.ibl {
+  display: inline-block;
+}
+.cleanbtn {
+  border: none;
+  outline: none;
+  background: none;
+}
+.abs {
+  position: absolute;
+  &.fill {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  &.abc {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.abcb:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nope {
+  pointer-events: none;
+}
+.rel {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+.b {
+  font-weight: bold;
+}
+.b1 {
+  font-weight: 100;
+}
+.b2 {
+  font-weight: 200;
+}
+.b3 {
+  font-weight: 300;
+}
+.b4 {
+  font-weight: 400;
+}
+.b5 {
+  font-weight: 500;
+}
+.b6 {
+  font-weight: 600;
+}
+.b7 {
+  font-weight: 700;
+}
+.b8 {
+  font-weight: 800;
+}
+.b9 {
+  font-weight: 900;
+}
+a,
+.noul {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.nouls,
+.noulh:hover {
+  text-decoration: underline;
+}
+.nous {
+  user-select: none;
+}
+.anim {
+  transition: all 0.3s linear 0s;
+}
+.upc {
+  text-transform: uppercase;
+}
+.t-c {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.f1 {
+  flex: 1;
+}
+.f2 {
+  flex: 2;
+}
+.f3 {
+  flex: 3;
+}
+.f4 {
+  flex: 4;
+}
+
+.cfff {
+  color: #ffffff;
+}
+.c000 {
+  color: #000000;
+}
+.c333 {
+  color: #333;
+}
+.c444 {
+  color: #444;
+}
+.c555 {
+  color: #555;
+}
+.c666 {
+  color: #666;
+}
+.c777 {
+  color: #777;
+}
+.c888 {
+  color: #888;
+}
+.c999 {
+  color: #999;
+}
+
+.s9 {
+  font-size: 9px;
+}
+.s10 {
+  font-size: 10px;
+}
+.s11 {
+  font-size: 11px;
+}
+.s12 {
+  font-size: 12px;
+}
+.s13 {
+  font-size: 13px;
+}
+.s14 {
+  font-size: 14px;
+}
+.s15 {
+  font-size: 15px;
+}
+.s16 {
+  font-size: 16px;
+}
+.s18 {
+  font-size: 18px;
+}
+.s19 {
+  font-size: 19px;
+}
+.s20 {
+  font-size: 20px;
+}
+.s21 {
+  font-size: 21px;
+}
+.s22 {
+  font-size: 22px;
+}
+.s24 {
+  font-size: 24px;
+}
+.s26 {
+  font-size: 26px;
+}
+.s28 {
+  font-size: 28px;
+}
+.s30 {
+  font-size: 30px;
+}
+.s32 {
+  font-size: 32px;
+}
+.s34 {
+  font-size: 34px;
+}
+.s36 {
+  font-size: 36px;
+}
+.s38 {
+  font-size: 38px;
+}
+.s40 {
+  font-size: 40px;
+}
+.s42 {
+  font-size: 42px;
+}
+.s44 {
+  font-size: 44px;
+}
+.s46 {
+  font-size: 46px;
+}
+.s48 {
+  font-size: 48px;
+}
+.s58 {
+  font-size: 58px;
+}
+.s50 {
+  font-size: 50px;
+}
+.s52 {
+  font-size: 52px;
+}
+.s54 {
+  font-size: 54px;
+}
+.s60 {
+  font-size: 60px;
+}
+.s65 {
+  font-size: 65px;
+}
+.s70 {
+  font-size: 70px;
+}
+.s72 {
+  font-size: 72px;
+}
+.s100 {
+  font-size: 100px;
+}
+.s120 {
+  font-size: 120px;
+}
+
+@mixin anim($duration: 0.3s) {
+  transition: all $duration linear 0s;
+}
+.button {
+  background: $themeColor;
+  border: 1px $themeColor solid;
+  color: #fff;
+  display: table;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.cancel {
+    background: $lightButtonColor;
+    border: 1px $lightButtonBorderColor solid;
+    color: $themeColor;
+    &:hover {
+      background: $lightButtonColorHover;
+    }
+  }
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.input {
+  border: 1px #c3c3c3 solid;
+  padding: 8px 12px;
+  line-height: 1;
+  border-radius: 5px;
+}
+.cover {
+  z-index: 101;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.holder {
+  background: #ddd !important;
+  animation: placeholder 2s linear infinite;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+@keyframes placeholder {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-button {
+  /* 2 */
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+// Modal
+.ReactModal__Content {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  border-radius: 8px;
+  overflow: auto;
+  outline: none;
+  transform: translate(-50%, -50%);
+  // background-color: #fff;
+  // max-width: 557px;
+  // max-height: calc(100vh - 40px);
+  height: auto;
+  width: auto;
+  opacity: 1;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+.ReactModal__Overlay {
+  inset: 0;
+  position: fixed;
+  // background: rgba(17, 24, 39, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+}
+
+.col {
+  flex-direction: column;
+}

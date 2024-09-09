@@ -1,0 +1,62 @@
+{
+    "name": "monkai-final-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-regular-svg-icons": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^12.1.4",
+        "@testing-library/user-event": "^13.5.0",
+        "assert": "^2.0.0",
+        "axios": "^0.26.1",
+        "buffer": "^6.0.3",
+        "near-api-js": "^0.44.2",
+        "os": "^0.1.2",
+        "os-browserify": "^0.3.0",
+        "react": "^18.0.0",
+        "react-app-rewired": "^2.2.1",
+        "react-dom": "^18.0.0",
+        "react-icons": "^4.3.1",
+        "react-scripts": "5.0.0",
+        "react-svg-spinner": "^1.0.4",
+        "react-typewriter-effect": "^1.1.0",
+        "sass": "^1.50.1",
+        "stream": "^0.0.2",
+        "stream-browserify": "^3.0.0",
+        "stream-http": "^3.2.0",
+        "url": "^0.11.0",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-app-rewired eject",
+        "build:contracts": "cd contracts/nft && ./build.sh && cd ../.. "
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.4",
+        "postcss": "^8.4.12",
+        "tailwindcss": "^3.0.23"
+    }
+}
