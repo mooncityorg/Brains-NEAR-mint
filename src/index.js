@@ -7,14 +7,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import WalletProvider from "./contexts/connection";
 
-// import Loader from "./components/Loader";
-// const App = lazy(async () => {
-//   const [moduleExports] = await Promise.all([
-//     import("./App"),
-//     new Promise((resolve) => setTimeout(resolve, 3000)),
-//   ]);
-//   return moduleExports;
-// });
+
 import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
