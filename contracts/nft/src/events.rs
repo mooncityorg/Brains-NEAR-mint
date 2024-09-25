@@ -14,7 +14,6 @@ pub enum EventLogVariant {
     NftTransfer(Vec<NftTransferLog>),
 }
 
-/// Interface to capture data about an event
 ///
 /// Arguments:
 /// * `standard`: name of standard e.g. nep171
